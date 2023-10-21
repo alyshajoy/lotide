@@ -49,7 +49,6 @@ const eqObjects = function(object1, object2) {
     finalEval = false;
   }
 
-  console.log("1:", finalEval);
 
   for (let i = 0; i < obj1Array.length; i++) { // loop through each key/value pair to check if they match
     // console.log("type1:", typeof obj1Array[i][1], "type2:", typeof obj2Array[i][1]);
@@ -57,36 +56,27 @@ const eqObjects = function(object1, object2) {
     // console.log("check matching values:", obj1Array[i][1], obj2Array[i][1]);
     if (typeof obj1Array[i][1] !== typeof obj2Array[i][1]) {
       finalEval = false;
-      console.log("2:", finalEval);
       break;
     }
     
     if (typeof obj1Array[i][1] === "object") { // if either value is an array, use eqArrays function to check for equality
-      console.log("compare values:", obj1Array[i][1], obj2Array[i][1], "compare keys:", obj1Array[i][0], obj2Array[i][0]);
       if(!eqArrays(obj1Array[i][1], obj2Array[i][1])) { // compare values
-        console.log("compare in loop:", obj1Array[i][1], obj2Array[i][1]);
         finalEval = false;
-        console.log("3:", finalEval);
         break;
       }
     
       if (obj1Array[i][0] !== obj2Array[i][0]) { // if the keys don't match, return false
         finalEval = false;
-        console.log("4:", finalEval);
         break;
       } 
 
     }
-    console.log("refresh of array contents:", obj1Array, obj2Array);
+  
     if (!Array.isArray(obj1Array[i][1]) && !Array.isArray(obj2Array[i][1])) { // if no arrays, check for matches
       if (obj1Array[i][0] !== obj2Array[i][0] || obj1Array[i][1] !== obj2Array[i][1]) {
-        console.log("Mismatch detected at index", i);
-        console.log("Key:", obj1Array[i][0], obj2Array[i][0]);
-        console.log("Value:", obj1Array[i][1], obj2Array[i][1]);
           // check if key/value pairs are equal
         finalEval = false;
         if (finalEval === false) {
-          console.log("5:", finalEval);
           break;
         };
         
