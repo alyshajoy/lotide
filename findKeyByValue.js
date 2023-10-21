@@ -23,16 +23,14 @@ const findKeyByValue = function(object, find) {
   let wantedValue = [];
   let objectValues = Object.entries(object);
   let flatArray = flatten(objectValues);
-  console.log("flatArray:", flatArray);
 
   for (let i = 0; i < flatArray.length; i++) {
     if (flatArray[i] === find) {
-      console.log(i);
       wantedValue.push(flatArray[i - 1]);
       break;
     }
   }
-  console.log("wantedValue:", wantedValue);
+
   return wantedValue[0];
 
 }
