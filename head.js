@@ -1,7 +1,7 @@
 const assertEqual = require('./assertEqual');
 
 const head = function(array){
-  firstElement = array.shift();
+  firstElement = array[0];
   return firstElement;
 }
 
