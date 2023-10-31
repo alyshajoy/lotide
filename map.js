@@ -52,3 +52,5 @@ assertArraysEqual(pigResults, ["whoay", "areay", "youay"]);
 
 assertArraysEqual(results1, ["G", "i", "l", "a", "l", "i", "r"]);
 assertArraysEqual(results2, ["h", "w"]);
+
+module.exports = map;

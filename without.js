@@ -36,3 +36,5 @@ const without = function(array, takeOut) {
 console.log(without(["1", "2", "3"], [1, 2, "3"]));
 console.log(without(["hello", "world", "lighthouse"], ["lighthouse"]));
 console.log(without([1, 2, 3], [1]));
+
+module.exports = without;

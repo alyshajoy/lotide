@@ -53,3 +53,5 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
 assertEqual(findKeyByValue(childrenAges, 8), "Graham");
 assertEqual(findKeyByValue(childrenAges, 2), undefined);
+
+module.exports = findKeyByValue;
