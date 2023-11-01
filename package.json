@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@alyshajoy/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A package of functions that allow for manipulation of arrays and objects. This was created as a project for the Lighthouse Labs Bootcamp.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Alysha Huot",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.10",
