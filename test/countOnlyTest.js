@@ -34,6 +34,3 @@ describe("#countOnly", () => {
   });
 
 });
-
-// assertEqual(result1["Fang"], 2);
-// assertEqual(result1["Agouhanna"], undefined);
